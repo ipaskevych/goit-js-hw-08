@@ -1,0 +1,28 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Устанавливаем ширину контейнера для 3-х колонок: 360*3 + 24*2 */
+    width: 1128px;
+    /* Горизонтальный отступ */
+    column-gap: 24px;
+    /* Вертикальный отступ */
+    row-gap: 48px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+.gallery-image {
+    display: block;
+    /* Точные размеры из задания */
+    width: 360px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-image:hover {
+    transform: scale(1.03);
+    cursor: zoom-in;
+}
