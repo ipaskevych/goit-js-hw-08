@@ -87,7 +87,8 @@ galleryContainer.innerHTML = galleryMarkup;
 
 // 3. Делегирование и модальное окно
 galleryContainer.addEventListener('click', (event) => {
-  event.preventDefault(); // Запрещаем скачивание картинки
+    event.preventDefault();
+    
 
   // Проверяем, что кликнули именно по картинке
   if (event.target.nodeName !== 'IMG') {
